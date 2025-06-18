@@ -2,9 +2,11 @@
 import sys
 
 def main():
-    if len(sys.argv) == 2:
-        # แปลงพารามิเตอร์ตัวที่ 1 เป็นตัวพิมพ์ใหญ่
-        print(sys.argv[1].upper())
-    else:
+    if len(sys.argv) < 2:
         print("none")
-main()
+    else:
+        text = " ".join(sys.argv[1:])
+        print(text.upper())
+
+if __name__=="__main":
+   main()
