@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
-def main():
-    if len(sys.argv) < 2:
-        print("none")
-    else:
-        text = " ".join(sys.argv[1:])
-        print(text.upper())
-
-if __name__=="__main":
-   main()
+if len(sys.argv) == 1:
+    print("none")
+else:
+    print(sys.argv[1].upper())
