@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 import sys
 
-def main():
-    params = sys.argv[1:]
-    if len(params) < 2:
-        print("none")
-    else:
-        for param in reversed(params):
-            print(param)
+if len(sys.argv) < 2:
+    print("none")
+else:
+    for arg in reversed(sys.argv[1:]):
+        print(arg)
